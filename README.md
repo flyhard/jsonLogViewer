@@ -6,7 +6,7 @@ This is a wrapper for the json log viewer from https://github.com/gistia/json-lo
 
 add this to your profile:
 ```bash
-jvFunc() { docker run -it --rm -v "$(dirname $1):/logs" jsonviewer_jv jv "/logs/$(basename $1)"; }
+jvFunc() { docker run -it --rm -v "$(dirname $1):/logs" flyhard/json-log-viewer jv "/logs/$(basename $1)"; }
 alias jv=jvFunc
 ```
 
